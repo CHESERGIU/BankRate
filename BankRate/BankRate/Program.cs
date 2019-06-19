@@ -12,7 +12,8 @@ namespace BankRate
         {
             decimal principal = total / periodInMonth;
             decimal exactInterestPerMonth = interestPerYear / 12 / 100;
-            return principal + total * exactInterestPerMonth;
+            decimal sold = total - (currentMonth - 1) * principal;
+            return principal + sold * exactInterestPerMonth;
         }
     }
 }

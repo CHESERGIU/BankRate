@@ -11,5 +11,12 @@ namespace BankRate.Tests
             decimal rate = Program.CalculateBankRate(200, 2, 12, 1);
             Assert.Equal(102, rate);
         }
+
+        [Fact]
+        public void CalculateRateForSecondMonth()
+        {
+            decimal rate = Program.CalculateBankRate(200, 2, 12, 2);
+            Assert.Equal(101, rate);
+        }
     }
 }
