@@ -5,7 +5,7 @@ namespace BankRate
     public class Program
     {
         public static void Main(string[] args)
-        {            
+        {
         }
 
         public static decimal CalculateBankRate(decimal total, int periodInMonth, decimal interestPerYear, int currentMonth)
